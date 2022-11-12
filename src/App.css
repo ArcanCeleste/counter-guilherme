@@ -1,0 +1,93 @@
+.container {
+  width: 100%;;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+.siteTitle {
+  font-size: 70px;
+  color: #004370;
+  cursor: pointer;
+}
+.siteTitle a {
+  color: inherit;
+  text-decoration: none;
+}
+.mainContentSite {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.bigCounterNumberArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bigCounterNumber {
+  font-size: 80px;
+  word-break: break-all;
+  text-align: center;
+}
+.buttonsArea {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+.buttonCounter {
+  text-transform: capitalize;
+  background-color: transparent;
+  color: black;
+  outline: 0;
+  border: 2px solid black;
+  font-size: 22px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/*OPTIONS MENU*/
+
+.optionsMenu {
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+#labelStepsNumber, #labelDefaultNumber {
+  font-size: 20px;
+}
+#stepsNumber, #defaultNumber {
+  font-size: 19px;
+  text-align: center;
+}
+.footerSite {
+  color: #909090;
+}
+
+@media (max-width: 400px) {
+  .siteTitle {
+    font-size: 50px;
+  }
+  .buttonsArea {
+    gap: 5px
+  }
+  .buttonCounter {
+    font-size: 16px;
+  }
+  .bigCounterNumber {
+    font-size: 50px;
+  }
+  #labelStepsNumber, #labelDefaultNumber {
+    font-size: 16px;
+  }
+  #stepsNumber, #defaultNumber {
+    font-size: 15px;
+  }
+}
