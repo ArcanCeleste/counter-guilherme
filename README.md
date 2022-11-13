@@ -1,4 +1,4 @@
-# color-generator
+# counter
 My second project made with React. <br/>
 Created By Guilherme de Paula da Siva.<br/>
 This project is a counter. <br/><br/>
