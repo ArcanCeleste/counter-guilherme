@@ -1,5 +1,6 @@
 import { ChangeEvent, useState } from 'react'
 import './App.css'
+import { transformNumber } from './helpers/formatNum';
 import { fbConfig } from './firebase/firebase';
 
 
@@ -66,7 +67,7 @@ function App() {
       </header>
       <main className='mainContentSite'>
         <div className='bigCounterNumberArea'>
-          <p className='bigCounterNumber' style={{color: colorCounter()}}>{counter.toString()}</p>
+          <p className='bigCounterNumber' style={{color: colorCounter()}}>{transformNumber(counter.toString())}</p>
         </div>
         
         
